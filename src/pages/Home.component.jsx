@@ -8,15 +8,17 @@ import {
 import Sidebar from '../components/Sidebar/sidebar.component'
 import useStore from '../useStore'
 import About from '../components/About/about.component'
+import Catalogue from '../components/Catalogue/catalogue.component'
 
 const Home = () => {
   const { openSidebar } = useStore();
   return (
     <HomeContainer>
-          <Header />
-          <Introduction />
+        <Header />
+        <Introduction />
         {openSidebar && <Sidebar />}
         <About />
+        <Catalogue />
     </HomeContainer>
   )
 }
