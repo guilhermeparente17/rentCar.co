@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const SidebarContainer = styled.section`
     position: relative;
@@ -8,9 +8,24 @@ export const SidebarContainer = styled.section`
     display:flex;
     justify-content: flex-end;
     align-items: center;
+    top: 0;
+    right: 0;
+`;
+
+const slideIn = keyframes`
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 `;
 
 export const SidebarContent = styled.div`
+    animation: ${slideIn} 0.3s ease-in-out;
+    position: fixed;
+    top: 0;
+    right: 0;
     width: 100%;
     height: 100%;
     background-color: #291315;

@@ -16,7 +16,7 @@ const Sidebar = () => {
     const { setOpenSidebar } = useStore();
   return (
     <SidebarContainer>
-        <SidebarContent>
+        {<SidebarContent>
             <SidebarWrap>
                 <SidebarClose onClick={() => setOpenSidebar(false)}>X</SidebarClose>
             </SidebarWrap>
@@ -29,7 +29,7 @@ const Sidebar = () => {
                 <SidebarLink>Contact Us</SidebarLink>
                 <SidebarButton>Sign In</SidebarButton>
             </SidebarNav>
-        </SidebarContent>
+        </SidebarContent>}
     </SidebarContainer>
   )
 }
