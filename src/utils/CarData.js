@@ -51,29 +51,12 @@ export const CarData = [
         }
     },
     {
-        id: 4,
-        category: 'SUV',
-        imageUrl: 'https://clienteparasempre.com.br/Chevrolet/consorcio/detalhes/99.png',
-        brand: 'Chevrolet',
-        name: 'Tracker AT',
-        stars: 4,
-        additional: {
-            cambio: 'Automatic',
-            arCondicionado: true,
-            peoples: 6,
-        },
-        value: {
-            currency: '$',
-            amount: 300,
-        }
-    },
-    {
         id: 5,
         category: 'SPORT',
         imageUrl: 'https://clienteparasempre.com.br/Chevrolet/consorcio/detalhes/99.png',
         brand: 'Chevrolet',
         name: 'Tracker AT',
-        stars: 4,
+        stars: 2,
         additional: {
             cambio: 'Automatic',
             arCondicionado: true,
@@ -90,41 +73,7 @@ export const CarData = [
         imageUrl: 'https://clienteparasempre.com.br/Chevrolet/consorcio/detalhes/99.png',
         brand: 'Chevrolet',
         name: 'Tracker AT',
-        stars: 4,
-        additional: {
-            cambio: 'Automatic',
-            arCondicionado: true,
-            peoples: 6,
-        },
-        value: {
-            currency: '$',
-            amount: 300,
-        }
-    },
-    {
-        id: 7,
-        category: 'SPORT',
-        imageUrl: 'https://clienteparasempre.com.br/Chevrolet/consorcio/detalhes/99.png',
-        brand: 'Chevrolet',
-        name: 'Tracker AT',
-        stars: 4,
-        additional: {
-            cambio: 'Automatic',
-            arCondicionado: true,
-            peoples: 6,
-        },
-        value: {
-            currency: '$',
-            amount: 300,
-        }
-    },
-    {
-        id: 8,
-        category: 'SPORT',
-        imageUrl: 'https://clienteparasempre.com.br/Chevrolet/consorcio/detalhes/99.png',
-        brand: 'Chevrolet',
-        name: 'Tracker AT',
-        stars: 4,
+        stars: 3,
         additional: {
             cambio: 'Automatic',
             arCondicionado: true,
@@ -141,7 +90,7 @@ export const CarData = [
         imageUrl: 'https://clienteparasempre.com.br/Chevrolet/consorcio/detalhes/99.png',
         brand: 'Chevrolet',
         name: 'Tracker AT',
-        stars: 4,
+        stars: 5,
         additional: {
             cambio: 'Automatic',
             arCondicionado: true,
