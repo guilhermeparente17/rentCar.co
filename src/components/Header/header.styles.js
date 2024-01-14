@@ -47,7 +47,7 @@ export const HeaderButton = styled.button`
     width: 80px;
     height: 35px;
     border-radius: 6px;
-    background-color: red;
+    background-color: #3C2C2D;
     border: 0;
     color: #fff;
     transition: 0.2s ease-in-out;

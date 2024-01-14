@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const IntroductionContainer = styled.section`
     width: 100%;
     height: 100%;
+    position: relative;
 `;
 
 export const IntroImage = styled.img`
@@ -13,8 +14,6 @@ export const IntroImage = styled.img`
     -o-object-fit:cover;
     object-fit: cover;
 
-    position: absolute;
-
     display:flex;
     justify-content: center;
     align-items: center;
@@ -22,11 +21,14 @@ export const IntroImage = styled.img`
 
 export const IntroContent = styled.div`
     position: absolute;
+    top: 120px;
+    left: 60px;
+    z-index: 1;
+
     background-color: rgba(0,0,0,0.5);
     color: #fff;
     padding: 20px;
 
-    margin: 120px 0px 0px 60px;
     height: 280px;
     width: 360px;
 
@@ -37,6 +39,8 @@ export const IntroContent = styled.div`
 
     @media screen and (max-width: 750px) {
         margin: 120px 10px 10px 0px;
+        top: 0px;
+        left: 0px;
         justify-content: center;
         align-items: center;
         width: 100%;

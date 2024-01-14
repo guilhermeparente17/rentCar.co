@@ -7,14 +7,16 @@ import {
 } from './Home.styles'
 import Sidebar from '../components/Sidebar/sidebar.component'
 import useStore from '../useStore'
+import About from '../components/About/about.component'
 
 const Home = () => {
   const { openSidebar } = useStore();
   return (
     <HomeContainer>
-        <Header />
-        <Introduction />
+          <Header />
+          <Introduction />
         {openSidebar && <Sidebar />}
+        <About />
     </HomeContainer>
   )
 }
