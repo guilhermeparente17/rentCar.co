@@ -1,3 +1,4 @@
+import { TiThMenu } from 'react-icons/ti';
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
@@ -25,6 +26,10 @@ export const HeaderNav = styled.ul`
     align-items: center;
 
     margin-right: 50px;
+
+    @media screen and (max-width: 750px) {
+        display: none;
+    }
 `;
 
 export const HeaderLink = styled.li`
@@ -54,3 +59,21 @@ export const HeaderButton = styled.button`
     }
 `;
 
+export const HeaderIconMenu = styled.div`
+    display: none;
+
+    @media screen and (max-width: 750px) {
+        display: block;
+    }
+`;
+
+export const Menu = styled(TiThMenu)`
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+        color: #ccc;
+        transition: 0.2s ease-in-out;
+    }
+`;

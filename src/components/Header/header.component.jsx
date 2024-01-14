@@ -5,10 +5,14 @@ import {
     HeaderLogo,
     HeaderNav,
     HeaderLink,
-    HeaderButton
+    HeaderButton,
+    HeaderIconMenu,
+    Menu
 } from './header.styles'
+import useStore from '../../useStore';
 
 const Header = () => {
+  const { setOpenSidebar } = useStore();
   return (
     <HeaderContainer>
         <HeaderLogo>RentCar.co</HeaderLogo>
@@ -20,6 +24,10 @@ const Header = () => {
             <HeaderLink>Contact Us</HeaderLink>
             <HeaderButton>Sign In</HeaderButton>
         </HeaderNav>
+
+        <HeaderIconMenu onClick={() => setOpenSidebar(true)}>
+          <Menu size="24" />
+        </HeaderIconMenu>
     </HeaderContainer>
   )
 }

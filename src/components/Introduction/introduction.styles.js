@@ -125,4 +125,6 @@ export const IntroInputDate = styled.input`
     width: 130px;
     height: 20px;
     padding: 5px;
+    background-color: #F6ECEB;
+    border: 0;
 `;
