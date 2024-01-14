@@ -10,6 +10,8 @@ export const IntroImage = styled.img`
     height: 800px;
     background-size: cover;
     background-position: center;
+    -o-object-fit:cover;
+    object-fit: cover;
 
     position: absolute;
 
@@ -32,12 +34,24 @@ export const IntroContent = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+
+    @media screen and (max-width: 750px) {
+        margin: 120px 10px 10px 0px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
 `;
 
 export const IntroTitle = styled.h1`
     font-size: 40px;
     text-transform: uppercase;
     margin-bottom: 20px;
+
+    @media screen and (max-width: 750px) {
+        font-size: 20px;
+        text-align: center;
+    }
 `;
 
 export const IntroSubTitle = styled.p`
@@ -55,6 +69,11 @@ export const IntroSearchContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: 650px) {
+        height: 400px;
+        top: 400px;
+    }
 `;
 
 export const IntroSearch = styled.section`
@@ -68,6 +87,12 @@ export const IntroSearch = styled.section`
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    @media screen and (max-width: 650px) {
+        height: 300px;
+        flex-direction: column;
+        width: 90%;
+    }
 `;
 
 export const IntroSearchOption = styled.div`
